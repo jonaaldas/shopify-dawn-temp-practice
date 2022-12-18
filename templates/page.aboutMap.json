@@ -9,7 +9,30 @@
     },
     "team": {
       "type": "team",
+      "blocks": {
+        "5fe1739f-8742-4072-931d-6c48054b9f63": {
+          "type": "staff-profile",
+          "settings": {
+            "name": "Jonathan Aldas",
+            "title": "CEO",
+            "bio": "ent ex ipsum, tristique et varius vitae, rhoncus sed lectus. Duis tincidunt egestas pellentesque. Morbi vestibulum tellus et velit viverra volutpat. Donec vitae nibh euismod, semper lectus ut, interdum leo. Etiam at sollicitudin risus. Proin fermentum sagittis metus et sollicitudin. Mauris tincidunt magna sem, at tincidunt nisi ultricies in. Etiam lobortis ipsum vitae nisl fringilla pellentesque. Vivamus urna mi, tristique non nulla eu, interdum accumsan justo."
+          }
+        },
+        "45c521bd-b48c-41a1-8ebd-d1bc8067d401": {
+          "type": "staff-profile",
+          "settings": {
+            "name": "Bradley Perez",
+            "title": "CFO",
+            "bio": "g and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, buaksjdasd"
+          }
+        }
+      },
+      "block_order": [
+        "5fe1739f-8742-4072-931d-6c48054b9f63",
+        "45c521bd-b48c-41a1-8ebd-d1bc8067d401"
+      ],
       "settings": {
+        "title": "Meet our Team"
       }
     }
   },
