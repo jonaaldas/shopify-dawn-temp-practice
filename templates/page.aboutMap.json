@@ -8,7 +8,9 @@
       }
     },
     "team": {
-      "type": "team"
+      "type": "team",
+      "settings": {
+      }
     }
   },
   "order": [
