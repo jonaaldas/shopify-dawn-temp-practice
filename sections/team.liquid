@@ -1,0 +1,23 @@
+<div class="page-width">
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h2>{{ section.settings.title | escape }}</h2>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "team",
+    "tag": "div",
+    "class": "team-members",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "section-title",
+        "defaul": "Meet our Team"
+      }
+    ]
+  }
+{% endschema %}
