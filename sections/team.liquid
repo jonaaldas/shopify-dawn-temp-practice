@@ -5,15 +5,18 @@
       <h2>Hey</h2>
     </div>
   {% endif %}
-
-  {% for member in section.blocks %}
-    <div>
-      <h3>{{ member.settings.name }}</h3>
-      <span>{{ member.settings.title }}</span>
-      <p>{{ member.settings.bio }}</p>
-    </div>
-  {% endfor %}
-  %}
+  <div class="grid">
+    {% for member in section.blocks %}
+      <div class="medium-up--one-half">
+        {% if memeber.settings.photo %}
+          {{ member.settings.photo | img_url: '300x' | img_tag }}
+        {% endif %}
+        <h3>{{ member.settings.name }}</h3>
+        <span>{{ member.settings.title }}</span>
+        <p>{{ member.settings.bio }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}
@@ -35,6 +38,10 @@
         "type": "staff-profile",
         "settings": [
           {
+            "id": "photo",
+            "type": "image_picker",
+            "label": "photo"
+          }, {
             "id": "name",
             "type": "text",
             "label": "Name"
@@ -48,6 +55,12 @@
             "label": "Bio"
           }
         ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Sote Information",
+        "name": "Team Members"
       }
     ]
   }
