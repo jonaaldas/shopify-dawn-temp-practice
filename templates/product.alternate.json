@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "teamMembers",
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
